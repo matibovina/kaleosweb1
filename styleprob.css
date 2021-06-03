@@ -1,0 +1,99 @@
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+
+}
+
+body {
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+  background-image: url(img/10816.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo {
+  position: absolute;
+  transform: scale(0.3);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  justify-items: left;
+}
+.navbar {
+  width: 100%;
+}
+.navul {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-content: left;
+  list-style: none;
+  /* transform: scale(0.3); */
+  margin-left: 80px;
+  padding: 20px;
+  line-height:0;
+
+}
+
+.navitem {
+  padding-bottom: 5px;
+  
+}
+
+.maniquidiv {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: center;
+  align-self: center;
+  
+}
+.maniqui {
+  width: 100%;
+  max-height: 100%;
+  padding-right: 3em;
+}
+/* Seleccion de chaquetas */
+.subcontainer {
+
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  /* padding-bottom: 50px; */
+  padding: 100px 100px 0 100px;
+  grid-template-columns: repeat(2, 1fr);
+  line-height:0;
+  
+}
+/* Prueba de chaqueta */
+.subcontainer1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+  grid-template-rows: [y0] 1fr [y1] 1fr [y2];
+  align-items: center;
+  justify-items: center;
+  padding: 100px 120px 100px 100px;
+  
+}
+
+.provchaq1 {
+  grid-column: x0 / x2;
+}
+.divchaqueta {
+  width: 10%;
+  display: inline-block;
+}

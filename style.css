@@ -1,0 +1,204 @@
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  width: 100%;
+  height: 100%;
+
+}
+
+body {
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url(img/10816.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-60%, -60%);
+  
+}
+.container {
+  width: 100%;
+  height: 100%;
+ display: inline-grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+ align-items: center;
+}
+
+/* .mundo1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.mundo2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.mundo3 {
+  grid-column-start: 3;
+  grid-column-end: 4 ;
+} */
+
+.mundo1 {
+  
+  justify-self: center;
+  /* align-self: top; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  position: relative;
+  top: 2vh;
+  left: 9.5vw;
+}
+
+.img1 {
+  width: 150px;
+}
+.mundo2 {
+  justify-self: right;
+  align-self: top;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  position: relative;
+  bottom: 1vh;
+  left: 1.3vw;
+
+}
+.img2 {
+  width: 120px;
+}
+.mundo3 {
+  justify-self: center;
+  align-self: top;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position: relative;
+  bottom: 2vh;
+  right: 1vw;
+
+  
+}
+
+.img3 {
+  width: 175px;
+}
+.mundo4 {
+  justify-self: center;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  position: relative;
+  bottom: 12vh;
+  left: 2vw;
+}
+.img4 {
+  width: 170px;
+}
+.mundo5 {
+  justify-self: center;
+  align-self: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  position: relative;
+  bottom: 4vh;
+  left: 2vw;
+}
+.img5 {
+  width: 210px;
+}
+ .mundo1 .txt {
+  visibility: hidden;
+  width: 120px;
+
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 9vh;
+  right: 6vw;
+}
+ .mundo2 .txt {
+  visibility: hidden;
+  width: 120px;
+
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 9vh;
+  left: 4vw;
+}
+ .mundo3 .txt {
+  visibility: hidden;
+  width: 120px;
+
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 11vh;
+  left: 8vw;
+}
+ .mundo4 .txt {
+  visibility: hidden;
+  width: 120px;
+
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: 11vh;
+  right: 6vw;
+}
+ .mundo5 .txt {
+  visibility: hidden;
+  width: 120px;
+
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 13vh;
+  left: 8vw;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.mundo1:hover .txt {
+  visibility: visible;
+}
+.mundo2:hover .txt {
+  visibility: visible;
+}
+.mundo3:hover .txt {
+  visibility: visible;
+}
+.mundo4:hover .txt {
+  visibility: visible;
+}
+.mundo5:hover .txt {
+  visibility: visible;
+}
